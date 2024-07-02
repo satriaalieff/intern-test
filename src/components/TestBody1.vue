@@ -42,7 +42,7 @@ const checkAnswer = () => {
 
 const submitAnswer = () => {
     candidate.score += checkAnswer()
-    if (candidate.score > 200) candidate.succeed = true
+    if (candidate.score >= 200) candidate.succeed = true
 
     if (!(candidate.level > 1)) candidate.level++
     router.push('/result')
